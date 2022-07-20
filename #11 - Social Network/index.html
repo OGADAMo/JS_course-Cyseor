@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Hexa</title>
+</head>
+<body>
+    <div class="logo">
+        <img src="img/logo.png" alt="logo">
+    </div>
+
+    <h1>Društvena mreža namjenjena etčkim H4K3R1M4</h1>
+    <div class="main">
+        <form class="loginForm">
+            <h3>Login</h3>
+
+            <div>
+                <label for="login_email">Email:</label><br>
+                <input type="login_email" id="login_email" name="login_email" placeholder="niko.nikolic@mail.com"><br>
+            </div>
+
+            <div>
+                <label for="login_password">Password:</label><br>
+                <input type="password" id="login_password" name="login_password" placeholder="*******"><br>
+            </div>
+            
+            <div>
+                <button>Logiraj se</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="no-acc-register">
+        <p>Nemaš račun?</p>
+        <button id="register">Registriraj se</button>
+    </div>
+
+    <div class="modal">
+        <button class="closeModal">X</button>
+        <form id="registrationForm">
+            
+            <h2>Registracija korisnika</h2>
+            <div>
+                <label for="korisnicko_ime">Korisničko ime: *</label><br>
+                <input type="text" id="korisnicko_ime" name="korisnicko_ime" placeholder="niko.nikolic"><br>
+            </div>
+            <div>
+                <label for="register_email">Email adresa: *</label><br>
+                <input type="email" id="register_email" name="register_email" placeholder="niko.nikolic@mail.com"><br>
+            </div>
+            <div>
+                <label for="registerLozinka">Lozinka: *</label><br>
+                <input type="password" id="registerLozinka" name="registerLozinka" placeholder="********"><br>
+            </div>
+            <div>
+                <label for="ponovi_lozinku">Ponovi lozinku: *</label><br>
+                <input type="password" id="ponovi_lozinku" name="ponovi_lozinku" placeholder="********"><br>
+            </div>
+            <div>
+                <button>Registriraj se</button>
+            </div>
+            
+        </form>
+        
+    </div>
+
+    <script src="js/Validator.js"></script>
+    <script src="js/Session.js"></script>
+    <script src="js/User.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Hexa</title>
+</head>
+<body>
+    <div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="inner-container left-side">
+                <div style="position: relative; left: 0; top: 0;">
+                    <div class="front">
+                        <img src="img/avatar2.jpg" img_id="1" class="none">
+                        <img src="img/profile.jpg" img_id="2" class="none">
+                        <img src="img/avatar3.jpg" img_id="3" class="none">
+                        <img src="img/avatar4.jpg" img_id="4" class="none" >
+                    </div>
+                        <img src="img/changeAvatar.png" class="changeAvatar middle">
+                    
+                    
+                    <div class="avatarModal">
+                        <button class="closeAvatarModal">X</button>
+                        <h1 >Chose new Hacker</h1>
+                        <img src="img/avatar2.jpg" img_id="1">
+                        <img src="img/profile.jpg" img_id="2">
+                        <img src="img/avatar3.jpg" img_id="3">
+                        <img src="img/avatar4.jpg" img_id="4">
+                    </div>
+                </div>
+    
+                <p><b id="username">Loading...</b></p>
+                <p><b id="email"></b></p>
+
+                <button id="editAcc" style="padding: 3px;">Izmjeni nalog</button>
+                <button id="logut" style="padding: 3px;">Odjava</button>
+
+            </div>
+        </div>
+
+        <div class="col-md-9">
+            <div class="inner-container right-side">
+                <form >
+                    <textarea id="postContent" placeholder="Napisi i objavi..."></textarea>
+                    <button id="postForm">Objavi</button>
+                
+                </form>
+                <div id="allPostWrapper"></div>
+            </div>
+        </div>
+
+    <div class="modal">
+        <button class="closeModal">X</button>
+        <form id="editForm">
+            <h2>Izmjeni profil</h2>
+            <div>
+                <label for="korisnicko_ime">Korisnicko ime:</label>
+                <input id="korisnicko_ime" type="text" name="korisnicko_ime" placeholder="Niko Nikolic">
+            </div>
+
+            <div>
+                <label for="edit_email">Email:</label>
+                <input id="edit_email" type="email" name="edit_email" placeholder="niko.nikolic@mail.com">
+            </div>
+
+            <div>
+                <button>Izmjeni</button>
+            </div>
+        </form>
+        
+        <hr>
+        <button id="deleteProfile">Obrisi profil</button>
+    </div>
+
+    </div>
+    </div>
+
+    <script src="js/Session.js"></script>
+    <script src="js/User.js"></script>
+    <script src="js/Comments.js"></script>
+    <script src="js/Post.js"></script>
+    <script src="js/hexa.js"></script>
+</body>
+</html>
+
+
